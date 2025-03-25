@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cadastro usuarios</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="assets/img/jec-logo.png" type="image/png">
+
+</head>
+    <body>
+        <section class="container">
+
+            <a href="pages/contact.html">
+                <button id="navigateBtn">Ir para a Tela de Contato</button>
+            </a>
+            
+            <h1>Cadastro Usuários</h1>
+            <label for="nomeUsuario">Nome:</label>
+            <input type="text" name="nomeUsuario" id="nomeUsuario" required> <br>
+            
+            <label for="emailUsuario">Email:</label>
+            <input type="email" name="emailUsuario" id="emailUsuario" required><br>
+            
+            <button onclick="adicionarusuario()">Adicionar</button>
+        <h1>Usuários Cadastrados</h1>
+        <ul id="listausers"></ul>
+
+        <script src="scripts/userManagement.js"></script>
+        <script src="scripts/utilsScript.js"></script>
+    </section>
+
+    </body>
+
+</html>

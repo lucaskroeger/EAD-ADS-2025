@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato dos usuários cadastrados</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="icon" href="../assets/img/jec-logo.png" type="image/png">
+
+
+</head>
+
+<body>
+
+    <section class="container">
+
+        <a href="../index.html">
+            <button>Ir para Cadastro de Users</button>
+        </a>
+
+        <h1>Contato</h1>
+        <form action="#" method="GET">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Informe o nome do usuário criado aqui.">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="" required></textarea>
+
+            <button type="submit" onclick="enviaProBack()">Enviar</button>
+        </form>
+        <script>
+            document.getElementById("navigateBtn").addEventListener("click", function () {
+                window.location.href = "paginas/home.html";
+            });
+        </script>
+
+    </section>
+
+    <script src="../scripts/utilsScript.js"></script>
+
+</body>
+
+</html>
